@@ -1,0 +1,9 @@
+snap install nvim --classic 
+
+sudo apt install xclip
+
+sudo apt install g++
+
+sudo apt install nodejs
+
+sudo apt install npm

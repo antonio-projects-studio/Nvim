@@ -298,7 +298,7 @@ _G.packer_plugins = {
     url = "https://github.com/lucastavaresa/simpleIndentGuides.nvim"
   },
   ["styler.nvim"] = {
-    config = { "\27LJ\2\n²\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\2B\0\2\1K\0\1\0\vthemes\1\0\0\thelp\1\0\2\15background\tdark\16colorscheme\21catppuccin-mocha\rmarkdown\1\0\0\1\0\1\16colorscheme\fgruvbox\nsetup\vstyler\frequire\0" },
+    config = { "\27LJ\2\n²\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\2B\0\2\1K\0\1\0\vthemes\1\0\0\thelp\1\0\2\16colorscheme\21catppuccin-mocha\15background\tdark\rmarkdown\1\0\0\1\0\1\16colorscheme\fgruvbox\nsetup\vstyler\frequire\0" },
     loaded = true,
     path = "/home/antonio/.local/share/nvim/site/pack/packer/start/styler.nvim",
     url = "https://github.com/folke/styler.nvim"
@@ -333,26 +333,15 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/antonio/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-log-highlighting"] = {
+    loaded = true,
+    path = "/home/antonio/.local/share/nvim/site/pack/packer/start/vim-log-highlighting",
+    url = "https://github.com/mtdl9/vim-log-highlighting"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: SmoothCursor.nvim
-time([[Config for SmoothCursor.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0", "config", "SmoothCursor.nvim")
-time([[Config for SmoothCursor.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
--- Config for: nvim-ts-context-commentstring
-time([[Config for nvim-ts-context-commentstring]], true)
-try_loadstring("\27LJ\2\nu\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\26context_commentstring\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-ts-context-commentstring")
-time([[Config for nvim-ts-context-commentstring]], false)
--- Config for: styler.nvim
-time([[Config for styler.nvim]], true)
-try_loadstring("\27LJ\2\n²\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\2B\0\2\1K\0\1\0\vthemes\1\0\0\thelp\1\0\2\15background\tdark\16colorscheme\21catppuccin-mocha\rmarkdown\1\0\0\1\0\1\16colorscheme\fgruvbox\nsetup\vstyler\frequire\0", "config", "styler.nvim")
-time([[Config for styler.nvim]], false)
 -- Config for: simpleIndentGuides.nvim
 time([[Config for simpleIndentGuides.nvim]], true)
 try_loadstring("\27LJ\2\nl\0\0\4\0\b\0\f6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0'\2\6\0'\3\a\0B\0\3\1K\0\1\0\aÂ·\bâ”Š\nsetup\23simpleIndentGuides\frequire\tlist\bopt\bvim\0", "config", "simpleIndentGuides.nvim")
@@ -361,14 +350,6 @@ time([[Config for simpleIndentGuides.nvim]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: NeoRoot.lua
-time([[Config for NeoRoot.lua]], true)
-try_loadstring("\27LJ\2\nH\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\rCUR_MODE\3\2\nsetup\rneo-root\frequire\0", "config", "NeoRoot.lua")
-time([[Config for NeoRoot.lua]], false)
--- Config for: nvim-dap-python
-time([[Config for nvim-dap-python]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15dap-python\frequire\0", "config", "nvim-dap-python")
-time([[Config for nvim-dap-python]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nf\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\16action_keys\1\0\0\tjump\1\0\0\1\2\0\0\6l\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
@@ -377,6 +358,30 @@ time([[Config for trouble.nvim]], false)
 time([[Config for dressing.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rdressing\frequire\0", "config", "dressing.nvim")
 time([[Config for dressing.nvim]], false)
+-- Config for: SmoothCursor.nvim
+time([[Config for SmoothCursor.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0", "config", "SmoothCursor.nvim")
+time([[Config for SmoothCursor.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: styler.nvim
+time([[Config for styler.nvim]], true)
+try_loadstring("\27LJ\2\n²\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\3=\3\t\2B\0\2\1K\0\1\0\vthemes\1\0\0\thelp\1\0\2\16colorscheme\21catppuccin-mocha\15background\tdark\rmarkdown\1\0\0\1\0\1\16colorscheme\fgruvbox\nsetup\vstyler\frequire\0", "config", "styler.nvim")
+time([[Config for styler.nvim]], false)
+-- Config for: nvim-ts-context-commentstring
+time([[Config for nvim-ts-context-commentstring]], true)
+try_loadstring("\27LJ\2\nu\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\26context_commentstring\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-ts-context-commentstring")
+time([[Config for nvim-ts-context-commentstring]], false)
+-- Config for: nvim-dap-python
+time([[Config for nvim-dap-python]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15dap-python\frequire\0", "config", "nvim-dap-python")
+time([[Config for nvim-dap-python]], false)
+-- Config for: NeoRoot.lua
+time([[Config for NeoRoot.lua]], true)
+try_loadstring("\27LJ\2\nH\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\rCUR_MODE\3\2\nsetup\rneo-root\frequire\0", "config", "NeoRoot.lua")
+time([[Config for NeoRoot.lua]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
