@@ -160,8 +160,8 @@ require("alpha.term")
 --/usr/local/bin/asciiquarium
 dashboard.section.terminal = {
 	type = "terminal",
-	-- command = string.format("chafa -c full --fg-only --symbols braille ~/.config/nvim/static/%s.gif", get_fortune()),
-    command = string.format("cmatrix"),
+	command = string.format("chafa -c full --fg-only --symbols braille ~/.config/nvim/static/%s.gif", get_fortune()),
+    -- command = string.format("cmatrix"),
 
 	width = 64,
 	height = 32,
@@ -267,7 +267,8 @@ dashboard.section.footer = {
 -- Layout
 dashboard.opts = {
 	layout = {
-		{ type = "padding", val = 15},
+        -- dashboard.section.terminal,
+		{ type = "padding", val = 5},
 		dashboard.section.header,
         { type = "padding", val = 10},
 		dashboard.section.date,
@@ -275,8 +276,6 @@ dashboard.opts = {
 		dashboard.section.buttons,
 		{ type = "padding", val = 1 },
 		dashboard.section.footer,
-        dashboard.section.terminal,
-        -- { type = "padding", val = 0},
 	},
 	opts = {
 		margin = 0,
