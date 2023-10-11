@@ -50,6 +50,10 @@ require("formatter").setup({
 			require("formatter.filetypes.python").autopep8,
 		},
 
+        javascript = {
+            require("formatter.filetypes.javascript").biome,
+        },
+
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
