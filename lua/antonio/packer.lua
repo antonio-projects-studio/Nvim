@@ -3,7 +3,12 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd([[packadd packer.nvim]])
 
-return require("packer").startup(function(use)
+local packer = require('packer')
+packer.init({
+    compile_path = vim.fn.stdpath('config') .. '/lua/plugins/' .. 'packer_compiled.lua',
+})
+
+return packer.startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
