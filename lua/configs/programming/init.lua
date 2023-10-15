@@ -1,0 +1,7 @@
+require("configs.programming.lsp")
+require("configs.programming.treesitter")
+require("configs.programming.swenv")
+require("configs.programming.Fterm")
+require("configs.programming.debag")
+require("configs.programming.format")
+require("configs.programming.auto-pairs")
