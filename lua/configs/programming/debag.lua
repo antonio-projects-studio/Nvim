@@ -1,9 +1,43 @@
 require("mason").setup()
 require("mason-nvim-dap").setup({
-	automatic_setup = true,
+	-- automatic_setup = true,
+	ensure_installed = { "python", "delve", "cppdbg" },
+	handlers = {
+		function(config)
+			-- all sources with no handler get passed here
+
+			-- Keep original functionality
+			require("mason-nvim-dap").default_setup(config)
+		end,
+		python = function(config)
+			config.adapters = {
+				type = "executable",
+				command = "/usr/bin/python3",
+				args = {
+					"-m",
+					"debugpy.adapter",
+				},
+			}
+			require("mason-nvim-dap").default_setup(config) -- don't forget this!
+		end,
+		cppdbg = function(config)
+			config.adapters = {
+				name = "Launch",
+				type = "lldb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+				end,
+				cwd = "${workspaceFolder}",
+				stopOnEntry = false,
+				args = {},
+				runInTerminal = true,
+			}
+			require("mason-nvim-dap").default_setup(config) -- don't forget this!
+		end,
+	},
 })
 
--- require("mason-nvim-dap").setup_handlers({})
 require("dapui").setup()
 
 require("nvim-dap-virtual-text").setup()
