@@ -197,7 +197,7 @@ dashboard.section.buttons = {
 		dashboard.button("s", "  Change Colorscehme", ":lua M.find() <CR>"),
 		dashboard.button("w", "  Transparent window", ":TransparentToggle <CR>"),
 		dashboard.button("c", "  Configuration", ":e $HOME/.config/nvim/lua/antonio/packer.lua <CR>"),
-		dashboard.button("p", "  Projects", ":e $HOME/NvimProjects/Hello_luser.txt <CR>"),
+		dashboard.button("p", "  Projects", ":e $HOME/Projects/Hello_luser.txt <CR>"),
 		dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 	},
 	opts = {
