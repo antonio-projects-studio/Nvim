@@ -45,7 +45,7 @@ return packer.startup(function(use)
 	})
 	use("EdenEast/nightfox.nvim")
 
-	require("alpha.term")
+--	require("alpha.term")
 	use({
 		"folke/styler.nvim",
 		config = function()
